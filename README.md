@@ -1,6 +1,4 @@
 # Osmer Vinarao
-    ITC  - The Internet And Web Application
-    ID: 2128682
-    SCHD: MW 
+    Exploring the latest technology advancements
     
 # Profile Page Project

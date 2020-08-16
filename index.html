@@ -291,53 +291,77 @@
         <div class="before"></div>
         <div class="after"></div>
     </div>
-    <div id=app class="main">
-        <div class="text-center">
-            <h1 style="font-size: 70px;">WE ARE <b style="color:rgb(255, 216, 197)">ALMOST</b> THERE</h1>
-            <br>
-            <!-- <h4>Stay tuned for something amazing!!!</h4> -->
+    <div id=app>
+        <div v-if="statusType !== 'expired'" class="main">
+            <div class="text-center">
+                <h1 style="font-size: 70px;">WE ARE <b style="color:rgb(255, 216, 197)">ALMOST</b> THERE</h1>
+                <br>
+                <!-- <h4>Stay tuned for something amazing!!!</h4> -->
+            </div>
+            <div class="row text-center m-5">
+                <div class="col-sm">
+                    <div class="card ">
+                        <div class="card-body" style="color:rgb(57, 238, 193)">
+                            <span class="number"><h1 ><b>{{ days }}</b></h1></span>
+                            <hr>
+                            <div class="format">{{ wordString.day }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body" style="color:rgb(255, 216, 197)">
+                            <span class="number"><h1><b>{{ hours }}</b></h1></span>
+                            <hr>
+                            <div class="format">{{ wordString.hours }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body" style="color:rgb(139, 202, 202)">
+                            <span class="number"><h1><b>{{ minutes }}</b></h1></span>
+                            <hr>
+                            <div class="format">{{ wordString.minutes }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body" style="color:rgb(254, 168, 137)">
+                            <span class="number"><h1><b>{{ seconds }}</b></h1></span>
+                            <hr>
+                            <div class="format">{{ wordString.seconds }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <h1 style="font-size: 100px;"><b style="color:rgb(212, 74, 97)">HAPPY</b> <b style="color:rgb(255, 216, 197)">2nd</b> <b style="color:rgb(57, 238, 193)">ANNIVERSARY</b></h1>
+            </div>
         </div>
-        <div class="row text-center m-5">
-            <div class="col-sm">
-                <div class="card ">
-                    <div class="card-body" style="color:rgb(57, 238, 193)">
-                        <span class="number"><h1 ><b>{{ days }}</b></h1></span>
-                        <hr>
-                        <div class="format">{{ wordString.day }}</div>
-                    </div>
+        <div v-else>
+            <div class="text-center" style="margin-top: 80px;">
+                <h1 style="font-size: 70px;">WE <b style="color:rgb(255, 216, 197)">MADE</b> IT</h1>
+                <br>
+            </div>
+            <div class="card m-5 p-5" style="opacity:0.6;">
+                <div class="card-body" style="color:black; font-size: 25px;">
+                    <p>Happy 2nd anniversary to the hottest, cutest and sweet girlfriend ever. Am I dreaming, or has a year already passed by? Wow! With you around, time just flies. Let’s celebrate the day that you gave up on finding anyone better than me.
+                        I want to say you that you make me the happiest man in the world to have your love. Today we meet our 2nd anniversary and every day we’ve spent together, we’ve seen our love get more and more grow up and it has filled our heart
+                        happiness. Spending of 11 months, 4 weeks, and 2 days with you is pure bliss equal a thousand years of experiencing all the other pleasure of life. With a twelve-month period passed by I realized that love is not about romantic
+                        excitement but to deal with a problem that handles the emotion of each other. We have shared so many amazing memories this past year. And here we again for another year of wonderful adventure together. I can’t wait to see how gonna
+                        solve our new year puzzle to build our new awesome memories. This is the special day in my life, the day you became a part of my life. You have been a caring and loving girlfriend. As we complete another year of togetherness, I
+                        pray Almighty that he always keeps up bonded like this and make our love stronger. I thank God every single day that I have you in my life. But I am especially thankful today, on our anniversary, that I have found you. I pray that
+                        we will have many more anniversaries to celebrate together. Thank you for loving me. Happy anniversary. </p>
                 </div>
             </div>
-            <div class="col-sm">
-                <div class="card">
-                    <div class="card-body" style="color:rgb(255, 216, 197)">
-                        <span class="number"><h1><b>{{ hours }}</b></h1></span>
-                        <hr>
-                        <div class="format">{{ wordString.hours }}</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <div class="card-body" style="color:rgb(139, 202, 202)">
-                        <span class="number"><h1><b>{{ minutes }}</b></h1></span>
-                        <hr>
-                        <div class="format">{{ wordString.minutes }}</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <div class="card-body" style="color:rgb(254, 168, 137)">
-                        <span class="number"><h1><b>{{ seconds }}</b></h1></span>
-                        <hr>
-                        <div class="format">{{ wordString.seconds }}</div>
-                    </div>
-                </div>
+            <div class="text-center">
+                <h1 style="font-size: 100px;"><b style="color:rgb(212, 74, 97)">HAPPY</b> <b style="color:rgb(255, 216, 197)">2nd</b> <b style="color:rgb(57, 238, 193)">ANNIVERSARY</b></h1>
             </div>
         </div>
-        <div class="text-center">
-            <h1 style="font-size: 100px;"><b style="color:rgb(212, 74, 97)">HAPPY</b> <b style="color:rgb(255, 216, 197)">2nd</b> <b style="color:rgb(57, 238, 193)">ANNIVERSARY</b></h1>
-        </div>
+
+
     </div>
     <div class="pyro">
         <div class="before"></div>

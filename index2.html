@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LOVE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Required Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+    <!---VUE CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/resume.min.css" rel="stylesheet"> -->
+    <link href="css/fireworks.css" rel="stylesheet">
+    <style>
+        body {
+            /* background-image: url('img/bc.jpg'); */
+            background-image: url('https://onlyvectorbackgrounds.com/wp-content/uploads/2019/03/Gradient-Abstract-Shapes-Background-Color.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: cover;
+            height: 100%;
+            color: white;
+        }
+        
+        .main {
+            margin-top: 200px;
+        }
+        
+        .wrappers {
+            text-align: center;
+            margin-top: 50%;
+            margin-left: 500px;
+        }
+        
+        .loves {
+            position: absolute;
+            top: 50%;
+        }
+        
+        .glow-on-hover {
+            width: 220px;
+            height: 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+        }
+        
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+        
+        .glow-on-hover:active {
+            color: #000
+        }
+        
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
+        
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
+        
+        .glow-on-hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+        
+        @keyframes glowing {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+        
+        @-webkit-keyframes beat {
+            0% {
+                -webkit-transform: scale(1) rotate(225deg);
+                -webkit-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+            }
+            50% {
+                -webkit-transform: scale(1.1) rotate(225deg);
+                -webkit-box-shadow: 0 0 70px rgba(213, 9, 60, 0.6);
+            }
+            100% {
+                -webkit-transform: scale(1) rotate(225deg);
+                -webkit-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+            }
+        }
+        
+        @-moz-keyframes beat {
+            0% {
+                -moz-transform: scale(1) rotate(225deg);
+                -moz-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+            }
+            50% {
+                -moz-transform: scale(1.1) rotate(225deg);
+                -moz-box-shadow: 0 0 70px rgba(213, 9, 60, 0.6);
+            }
+            100% {
+                -moz-transform: scale(1) rotate(225deg);
+                -moz-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+            }
+        }
+        
+        @keyframes beat {
+            0% {
+                transform: scale(1) rotate(225deg);
+                box-shadow: 0 0 40px #d5093c;
+            }
+            50% {
+                transform: scale(1.1) rotate(225deg);
+                box-shadow: 0 0 70px #d5093c;
+            }
+            100% {
+                transform: scale(1) rotate(225deg);
+                box-shadow: 0 0 40px #d5093c;
+            }
+        }
+        
+        @-webkit-keyframes justBeat {
+            0% {
+                -webkit-transform: scale(1);
+                -webkit-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+            }
+            50% {
+                -webkit-transform: scale(1.1);
+                -webkit-box-shadow: 0 0 70px rgba(213, 9, 60, 0.6);
+            }
+            100% {
+                -webkit-transform: scale(1);
+                -webkit-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+            }
+        }
+        
+        @-moz-keyframes justBeat {
+            0% {
+                -moz-transform: scale(1);
+                -moz-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+            }
+            50% {
+                -moz-transform: scale(1.1);
+                -moz-box-shadow: 0 0 70px rgba(213, 9, 60, 0.6);
+            }
+            100% {
+                -moz-transform: scale(1);
+                -moz-box-shadow: 0 0 40px rgba(213, 9, 60, 1);
+            }
+        }
+        
+        @keyframes justBeat {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 40px #d5093c;
+            }
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 0 70px #d5093c;
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 40px #d5093c;
+            }
+        }
+        
+        #chest {
+            position: relative;
+            width: 500px;
+            height: 450px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        
+        .heart {
+            position: absolute;
+            z-index: 2;
+            background: -moz-linear-gradient(-180deg, #F50A45 0%, #d5093c 40%);
+            background: -webkit-gradient(linear, right 50%, left 50%, color-stop(0%, #F50A45), color-stop(40%, #d5093c));
+            background: -webkit-linear-gradient(-180deg, #F50A45 0%, #d5093c 40%);
+            background: linear-gradient(-180deg, #F50A45 0%, #d5093c 40%);
+            -webkit-animation: beat 0.7s ease 0s infinite normal;
+            -moz-animation: beat 0.7s ease 0s infinite normal;
+            animation: beat 0.7s ease 0s infinite normal;
+        }
+        
+        .heart.center {
+            background: -moz-linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+            background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #B80734), color-stop(40%, #d5093c));
+            background: -webkit-linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+            background: linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+        }
+        
+        .heart.top {
+            z-index: 3;
+        }
+        
+        .side {
+            top: 50px;
+            width: 220px;
+            height: 220px;
+            -moz-border-radius: 220px;
+            -webkit-border-radius: 220px;
+            border-radius: 220px;
+        }
+        
+        .center {
+            width: 210px;
+            height: 210px;
+            bottom: 100px;
+            left: 145px;
+            font-size: 0;
+            text-indent: -9999px;
+        }
+        
+        .left {
+            left: 62px;
+        }
+        
+        .right {
+            right: 62px;
+        }
+        
+        .text {
+            position: absolute;
+            margin: 125px 200px;
+            z-index: 9;
+            font-size: 50px;
+            text-align: center;
+            color: #FFF;
+            line-height: 40px;
+            -webkit-animation: justBeat 0.7s ease 0s infinite normal;
+            -moz-animation: justBeat 0.7s ease 0s infinite normal;
+            animation: justBeat 0.7s ease 0s infinite normal;
+        }
+        
+        .text span {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div v-show="statusType !== 'expired'"> 
+        </div> -->
+    <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    <div id=app>
+        <div v-if="statusType !== 'expired'" class="main">
+            <div class="text-center">
+                <h1 style="font-size: 70px;">WE ARE <b style="color:rgb(255, 216, 197)">ALMOST</b> THERE</h1>
+                <br>
+                <!-- <h4>Stay tuned for something amazing!!!</h4> -->
+            </div>
+            <div class="row text-center m-5">
+                <div class="col-sm">
+                    <div class="card ">
+                        <div class="card-body" style="color:rgb(57, 238, 193)">
+                            <span class="number"><h1 ><b>{{ days }}</b></h1></span>
+                            <hr>
+                            <div class="format">{{ wordString.day }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body" style="color:rgb(255, 216, 197)">
+                            <span class="number"><h1><b>{{ hours }}</b></h1></span>
+                            <hr>
+                            <div class="format">{{ wordString.hours }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body" style="color:rgb(139, 202, 202)">
+                            <span class="number"><h1><b>{{ minutes }}</b></h1></span>
+                            <hr>
+                            <div class="format">{{ wordString.minutes }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body" style="color:rgb(254, 168, 137)">
+                            <span class="number"><h1><b>{{ seconds }}</b></h1></span>
+                            <hr>
+                            <div class="format">{{ wordString.seconds }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <h1 style="font-size: 100px;"><b style="color:rgb(212, 74, 97)">HAPPY</b> <b style="color:rgb(255, 216, 197)">2nd</b> <b style="color:rgb(57, 238, 193)">ANNIVERSARY</b></h1>
+            </div>
+        </div>
+        <div v-else>
+            <div class="text-center" style="margin-top: 80px;">
+                <h1 style="font-size: 70px;">WE <b style="color:rgb(255, 216, 197)">MADE</b> IT</h1>
+                <br>
+            </div>
+            <div class="card m-5 p-5" style="opacity:0.6;">
+                <div class="card-body" style="color:black; font-size: 25px;">
+                    <p>Happy 2nd anniversary to the hottest, cutest and sweet girlfriend ever. Am I dreaming, or has a year already passed by? Wow! With you around, time just flies. Let’s celebrate the day that you gave up on finding anyone better than me.
+                        I want to say you that you make me the happiest man in the world to have your love. Today we meet our 2nd anniversary and every day we’ve spent together, we’ve seen our love get more and more grow up and it has filled our heart
+                        happiness. Spending of 11 months, 4 weeks, and 2 days with you is pure bliss equal a thousand years of experiencing all the other pleasure of life. With a twelve-month period passed by I realized that love is not about romantic
+                        excitement but to deal with a problem that handles the emotion of each other. We have shared so many amazing memories this past year. And here we again for another year of wonderful adventure together. I can’t wait to see how gonna
+                        solve our new year puzzle to build our new awesome memories. This is the special day in my life, the day you became a part of my life. You have been a caring and loving girlfriend. As we complete another year of togetherness, I
+                        pray Almighty that he always keeps up bonded like this and make our love stronger. I thank God every single day that I have you in my life. But I am especially thankful today, on our anniversary, that I have found you. I pray that
+                        we will have many more anniversaries to celebrate together. Thank you for loving me. Happy anniversary. </p>
+                </div>
+            </div>
+            <div class="text-center">
+                <h1 style="font-size: 100px;"><b style="color:rgb(212, 74, 97)">HAPPY</b> <b style="color:rgb(255, 216, 197)">2nd</b> <b style="color:rgb(57, 238, 193)">ANNIVERSARY</b></h1>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+</body>
+
+</html>
+</div>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/resume.min.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            modals: {
+                verify: false,
+                letter: false
+            },
+            form: {
+                name: 'Knechole M. Baluarte',
+                // password: 'August172018'
+                password: ''
+            },
+            open: false,
+            timer: "",
+            wordString: {},
+            start: "",
+            end: "",
+            interval: "",
+            days: "",
+            minutes: "",
+            hours: "",
+            seconds: "",
+            message: "",
+            statusType: "",
+            statusText: "",
+            starttime: "Jul 9, 2020 15:37:25",
+            endtime: "Aug 17, 2020 00:00:00",
+            trans: {
+                day: "Day",
+                hours: "Hours",
+                minutes: "Minutes",
+                seconds: "Seconds",
+                expired: "HAPPY ANNIVERSARY.",
+                running: "Till the end of event.",
+                upcoming: "Till start of event.",
+                status: {
+                    expired: "Expired",
+                    running: "Running",
+                    upcoming: "Future"
+                }
+            }
+        },
+        methods: {
+            submitLogin(variant) {
+                if (this.form.password === 'August172018') {
+                    this.modals.verify = false;
+                    this.open = true;
+                    this.$bvToast.toast('Power kay ka Gourl! Good luck', {
+                        title: 'Success',
+                        variant: variant,
+                        solid: true
+                    })
+                } else {
+                    this.$bvToast.toast('Ayaw pataka diha Gourl! Good luck', {
+                        title: 'Failed',
+                        variant: 'warning',
+                        solid: true
+                    })
+                }
+            },
+            timerCount: function(start, end) {
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var distance = start - now;
+                var passTime = end - now;
+
+                if (distance < 0 && passTime < 0) {
+                    this.message = this.wordString.expired;
+                    this.statusType = "expired";
+                    this.statusText = this.wordString.status.expired;
+                    clearInterval(this.interval);
+                    return;
+
+                } else if (distance < 0 && passTime > 0) {
+                    this.calcTime(passTime);
+                    this.message = this.wordString.running;
+                    this.statusType = "running";
+                    this.statusText = this.wordString.status.running;
+
+                } else if (distance > 0 && passTime > 0) {
+                    this.calcTime(distance);
+                    this.message = this.wordString.upcoming;
+                    this.statusType = "upcoming";
+                    this.statusText = this.wordString.status.upcoming;
+                }
+            },
+            calcTime: function(dist) {
+                // Time calculations for days, hours, minutes and seconds
+                this.days = Math.floor(dist / (1000 * 60 * 60 * 24));
+                this.hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                this.minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+                this.seconds = Math.floor((dist % (1000 * 60)) / 1000);
+            }
+        },
+        created: function() {
+            this.wordString = this.trans;
+
+        },
+        mounted() {
+            this.start = new Date(this.starttime).getTime();
+            this.end = new Date(this.endtime).getTime();
+            // Update the count down every 1 second
+            this.timerCount(this.start, this.end);
+            this.interval = setInterval(() => {
+                this.timerCount(this.start, this.end);
+            }, 1000);
+        },
+    })
+</script>
+</body>
+
+</html>

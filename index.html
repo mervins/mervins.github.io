@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>LOVE</title>
+    <title>Blog Resume</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,23 +25,8 @@
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 
     <!-- Custom styles for this template -->
-    <!-- <link href="css/resume.min.css" rel="stylesheet"> -->
-    <link href="css/fireworks.css" rel="stylesheet">
+    <link href="css/resume.min.css" rel="stylesheet">
     <style>
-        body {
-            /* background-image: url('img/bc.jpg'); */
-            background-image: url('https://onlyvectorbackgrounds.com/wp-content/uploads/2019/03/Gradient-Abstract-Shapes-Background-Color.jpg');
-            background-repeat: no-repeat;
-            background-size: auto;
-            background-size: cover;
-            height: 100%;
-            color: white;
-        }
-        
-        .main {
-            margin-top: 200px;
-        }
-        
         .wrappers {
             text-align: center;
             margin-top: 50%;
@@ -284,89 +269,244 @@
     </style>
 </head>
 
-<body>
-    <!-- <div v-show="statusType !== 'expired'"> 
-        </div> -->
-    <div class="pyro">
-        <div class="before"></div>
-        <div class="after"></div>
-    </div>
-    <div id=app>
-        <div v-if="statusType !== 'expired'" class="main">
-            <div class="text-center">
-                <h1 style="font-size: 70px;">WE ARE <b style="color:rgb(255, 216, 197)">ALMOST</b> THERE</h1>
-                <br>
-                <!-- <h4>Stay tuned for something amazing!!!</h4> -->
-            </div>
-            <div class="row text-center m-5">
-                <div class="col-sm">
-                    <div class="card ">
-                        <div class="card-body" style="color:rgb(57, 238, 193)">
-                            <span class="number"><h1 ><b>{{ days }}</b></h1></span>
-                            <hr>
-                            <div class="format">{{ wordString.day }}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-body" style="color:rgb(255, 216, 197)">
-                            <span class="number"><h1><b>{{ hours }}</b></h1></span>
-                            <hr>
-                            <div class="format">{{ wordString.hours }}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-body" style="color:rgb(139, 202, 202)">
-                            <span class="number"><h1><b>{{ minutes }}</b></h1></span>
-                            <hr>
-                            <div class="format">{{ wordString.minutes }}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-body" style="color:rgb(254, 168, 137)">
-                            <span class="number"><h1><b>{{ seconds }}</b></h1></span>
-                            <hr>
-                            <div class="format">{{ wordString.seconds }}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <h1 style="font-size: 100px;"><b style="color:rgb(212, 74, 97)">HAPPY</b> <b style="color:rgb(255, 216, 197)">2nd</b> <b style="color:rgb(57, 238, 193)">ANNIVERSARY</b></h1>
-            </div>
-        </div>
-        <div v-else>
-            <div class="text-center" style="margin-top: 80px;">
-                <h1 style="font-size: 70px;">WE <b style="color:rgb(255, 216, 197)">MADE</b> IT</h1>
-                <br>
-            </div>
-            <div class="card m-5 p-5" style="opacity:0.6;">
-                <div class="card-body" style="color:black; font-size: 25px;">
-                    <p>Happy 2nd anniversary to the hottest, cutest and sweet girlfriend ever. Am I dreaming, or has a year already passed by? Wow! With you around, time just flies. Let’s celebrate the day that you gave up on finding anyone better than me.
-                        I want to say you that you make me the happiest man in the world to have your love. Today we meet our 2nd anniversary and every day we’ve spent together, we’ve seen our love get more and more grow up and it has filled our heart
-                        happiness. Spending of 11 months, 4 weeks, and 2 days with you is pure bliss equal a thousand years of experiencing all the other pleasure of life. With a twelve-month period passed by I realized that love is not about romantic
-                        excitement but to deal with a problem that handles the emotion of each other. We have shared so many amazing memories this past year. And here we again for another year of wonderful adventure together. I can’t wait to see how gonna
-                        solve our new year puzzle to build our new awesome memories. This is the special day in my life, the day you became a part of my life. You have been a caring and loving girlfriend. As we complete another year of togetherness, I
-                        pray Almighty that he always keeps up bonded like this and make our love stronger. I thank God every single day that I have you in my life. But I am especially thankful today, on our anniversary, that I have found you. I pray that
-                        we will have many more anniversaries to celebrate together. Thank you for loving me. Happy anniversary. </p>
-                </div>
-            </div>
-            <div class="text-center">
-                <h1 style="font-size: 100px;"><b style="color:rgb(212, 74, 97)">HAPPY</b> <b style="color:rgb(255, 216, 197)">2nd</b> <b style="color:rgb(57, 238, 193)">ANNIVERSARY</b></h1>
-            </div>
-        </div>
+<body id="page-top">
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">OSMER VINARAO</span>
+            <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/osmer.jpg" alt="">
+                </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+                </li>
 
-    </div>
-    <div class="pyro">
-        <div class="before"></div>
-        <div class="after"></div>
-    </div>
+                <li class="nav-item">
+                    <script type="text/javascript" src="https://freehitcounters.org/count/2vfj"></script><br>
+                    <a href='https://uhrenszene.de/'>Uhrenszene.de</a>
+                    <script type='text/javascript' src='https://whomania.com/ctr?id=aeb9ac1ff720ac24bfea70bee57ebbb593659321'></script>
+
+                    <a href="http://www.counter-zaehler.de" style="color: white;">
+                        <u>Web Counter</u>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+            <div class="w-100">
+                <h1 class="mb-0">Osmer
+                    <span class="text-primary">Vinarao</span>
+                </h1>
+                <div class="subheading mb-5">Malaybalay · Bukidnon · 8700· (+63)926-964-9985 ·
+                    <a href="mailto:osmervinarao@gmail.com">osmervinarao@gmail.com</a>
+                </div>
+                <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                <div class="social-icons">
+                    <!-- <a href="https://www.instagram.com/mher_vinz/">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="fab fa-messege"></i> -->
+                    </a>
+                    <a href="https://github.com/mervins">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/mersongwapo">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://web.facebook.com/mohamad.vinarao">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+            <div class="w-100">
+                <h2 class="mb-5">
+                    <u>Work Experience</u>
+                </h2>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h3 class="mb-0">Mobile Developer</h3>
+                        <div class="subheading mb-3">Split Second Software Services</div>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">July 2018 - Present</span>
+                    </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+                    <div class="resume-content">
+                        <h3 class="mb-0">Web Developer Intern</h3>
+                        <div class="subheading mb-3">BAI web and mobile</div>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">December 2017 - March 2018</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+            <div class="w-100">
+                <h2 class="mb-5">
+                    <u>Education</u>
+                </h2>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="resume-content">
+                        <h3 class="mb-0">Bukidnon State University</h3>
+                        <div class="subheading mb-3">Bachelor of Science</div>
+                        <div>Information Technology</div>
+                        <p>GPA: 3.23</p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">November 2013 - March 2018</span>
+                    </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+                    <div class="resume-content">
+                        <h3 class="mb-0">Notre Dame of Upi</h3>
+                        <div class="subheading mb-3">Catholic Shool</div>
+                        <p>GPA: 3.56</p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">June 2009 - March 2013</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+            <div class="w-100">
+                <h2 class="mb-5">
+                    <u>Skills</u>
+                </h2>
+
+                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <i class="fa-li fa fa-check"></i> FLUTTER dart framework</li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i> IONIC framework</li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i> ANDROID mobile developer</li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i> TOOLS (Android Studio &amp; Visual Studio)</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+            <div class="w-100">
+                <h2 class="mb-5">
+                    <u>Interests</u>
+                </h2>
+                <p>Apart from being a mobile developer, I enjoy most of my time being outdoors. In the summer, we play basketball, travel with family and freinds.</p>
+                <p class="mb-0">When forced indoors, I follow a number of series of anime and fantasy movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements.
+                </p>
+            </div>
+        </section>
+        <!-- <hr class="m-0">
+                                <div style="background-image:url('https://lechene.com/wp-content/uploads/2018/01/Happy-Valentines-Day-2.jpg');
+                                                                                                                                                                                                                                                            background-position: center center;
+                                                                                                                                                                                                                                                            background-repeat: no-repeat;">
+                                    <section class="resume-section" id="love">
+                                        <div id="app">
+                                            <div class="wrappers">
+                                                <div id="chest" v-if="open">
+                                                    <div @click="modals.letter=true">
+                                                        <div class="heart left side top"></div>
+                                                        <div class="heart center">&hearts;ddd</div>
+                                                        <div class="text">
+                                                            OPEN
+                                                            <br/>
+                                                                <span></span>
+                                                                <br/>ME</div>
+                                                            <div class="heart right side"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div v-else>
+                                                        <button class="glow-on-hover loves" type="button" @click="modals.verify=true">OPEN ME!</button>
+                                                    </div>
+                                                </div>
+                                                <b-modal title="Verify yourself" v-model="modals.verify">
+                                                    <b-form-group label="Name">
+                                                        <b-form-input type="text" v-model="form.name"></b-form-input>
+                                                    </b-form-group>
+                                                    <b-form-group label="Password">
+                                                        <b-form-input type="password" v-model="form.password"></b-form-input>
+                                                    </b-form-group>
+                                                    <p>
+                                                        <h4>HINT:</h4>Full date of our official relationship. ex(January12020)
+                                                    </p>
+                                                    <template v-slot:modal-footer>
+                                                        <b-btn variant="secondary" @click="modals.verify = false">Cancel</b-btn>
+                                                        <b-btn variant="success" @click="submitLogin('success')">Push mo yun guorl!</b-btn>
+                                                    </template>
+                                                </b-modal>
+                        
+                                                <b-modal title="Love Letter" size="lg" v-model="modals.letter">
+                                                    <p>My Dearest,</p>
+                                                    <p class="pl-3">
+                                                        Happy valentines day to my dearest lovebalbe girlfriends, I love you more than
+                                                        I could ever express in a few words. The long to be with you as I feel the happiest
+                                                        when you're in my arms.you are the most incredible thing that has ever come to me
+                                                        and I treasure you more than you know. When I look into your eyes, my dear, I am 
+                                                        lost in a world of magic. I love you. I love you each and every day. I love you 
+                                                        more than words I can say. Although all the time we are in the distance. When it comes to
+                                                        your behavior I love the way you laugh. I love the way you smile. I even love it 
+                                                        when you make me mad and don't know why.I love how when you upset me, you try so 
+                                                        hard to make it better. I am so much in love with you that I think of you only every
+                                                        single minute of the day and I wish that I was with you! I can't stand to be without you
+                                                        for even a second. You have truly turned me into myself.And for that I love you. I thank 
+                                                        you and I will forever cherish our memories and I know there are many more to come.
+                                                        From the moment that you leave me and  go to your work, till the moment you walk through the door
+                                                        of bus again, my mind constantly wanders to thoughts of you. I know that our status now is for a
+                                                        purposes and even though there's a lot of problem come to our life, I know we will passed it together.
+                                                        And don't worry if we can't celebrate the valentines together because for me the valentines is not
+                                                        qualification of love, because if you love someone show your passion of love in everyday and make your 
+                                                        love one feel that she is precious than the value diamons.  
+                                                        And to be a honest with you I need a google to made this letter brilliant for you. Ayeiiii gi kilig si gourl :D!!!!!
+                                                    </p>
+                                                    <p class="pl-3">My tender love and my hug are always with you. This letter is a token of love for you.</p>
+                                                </b-modal>
+                                            </div>
+                                        </section>
+                                    </div> -->
 </body>
 
 </html>
@@ -380,6 +520,7 @@
 <script src="js/resume.min.js"></script>
 <script>
     var app = new Vue({
+
         el: '#app',
         data: {
             message: 'Hello Vue!',
@@ -389,38 +530,9 @@
             },
             form: {
                 name: 'Knechole M. Baluarte',
-                // password: 'August172018'
-                password: ''
+                password: 'August172018'
             },
-            open: false,
-            timer: "",
-            wordString: {},
-            start: "",
-            end: "",
-            interval: "",
-            days: "",
-            minutes: "",
-            hours: "",
-            seconds: "",
-            message: "",
-            statusType: "",
-            statusText: "",
-            starttime: "Jul 9, 2020 15:37:25",
-            endtime: "Aug 17, 2020 00:00:00",
-            trans: {
-                day: "Day",
-                hours: "Hours",
-                minutes: "Minutes",
-                seconds: "Seconds",
-                expired: "HAPPY ANNIVERSARY.",
-                running: "Till the end of event.",
-                upcoming: "Till start of event.",
-                status: {
-                    expired: "Expired",
-                    running: "Running",
-                    upcoming: "Future"
-                }
-            }
+            open: false
         },
         methods: {
             submitLogin(variant) {
@@ -432,63 +544,9 @@
                         variant: variant,
                         solid: true
                     })
-                } else {
-                    this.$bvToast.toast('Ayaw pataka diha Gourl! Good luck', {
-                        title: 'Failed',
-                        variant: 'warning',
-                        solid: true
-                    })
                 }
-            },
-            timerCount: function(start, end) {
-                // Get todays date and time
-                var now = new Date().getTime();
-
-                // Find the distance between now an the count down date
-                var distance = start - now;
-                var passTime = end - now;
-
-                if (distance < 0 && passTime < 0) {
-                    this.message = this.wordString.expired;
-                    this.statusType = "expired";
-                    this.statusText = this.wordString.status.expired;
-                    clearInterval(this.interval);
-                    return;
-
-                } else if (distance < 0 && passTime > 0) {
-                    this.calcTime(passTime);
-                    this.message = this.wordString.running;
-                    this.statusType = "running";
-                    this.statusText = this.wordString.status.running;
-
-                } else if (distance > 0 && passTime > 0) {
-                    this.calcTime(distance);
-                    this.message = this.wordString.upcoming;
-                    this.statusType = "upcoming";
-                    this.statusText = this.wordString.status.upcoming;
-                }
-            },
-            calcTime: function(dist) {
-                // Time calculations for days, hours, minutes and seconds
-                this.days = Math.floor(dist / (1000 * 60 * 60 * 24));
-                this.hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                this.minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
-                this.seconds = Math.floor((dist % (1000 * 60)) / 1000);
             }
-        },
-        created: function() {
-            this.wordString = this.trans;
-
-        },
-        mounted() {
-            this.start = new Date(this.starttime).getTime();
-            this.end = new Date(this.endtime).getTime();
-            // Update the count down every 1 second
-            this.timerCount(this.start, this.end);
-            this.interval = setInterval(() => {
-                this.timerCount(this.start, this.end);
-            }, 1000);
-        },
+        }
     })
 </script>
 </body>

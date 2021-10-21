@@ -7,39 +7,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Osmer U. Vinarao</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-    <!-- Required Stylesheets -->
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
-    <!---VUE CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
-
+    <title>Osmer U. Vinarao</title>  
     <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <!-- <link href="css/resume.min.css" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
     <style>
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,p{ 
+        body {
+            margin: 0px;
+            background-color: #EEE;
+        }
+        h1,h2,h3,h4,h5,h6,p,li{ 
         font-family: 'Source Code Pro', monospace;
         color: #343a40;
+        }
+        .img-fluid{
+            border-radius: 50%;
+            height: 76px;
+            width: 76px;
         }
         h3 {
             font-size: 2rem;
@@ -49,24 +36,24 @@
             font-weight: 400;
         }
 
-        .card{
+        .paper{
             max-width: 8.5in;
-            min-height: 11in;
+            min-height: 13in;
             margin: auto;
             background-color: #FFF;
             box-sizing: border-box;
         }
         .h-con {
-                background-color: #bd5d38!important;
+                background-color: #BD5D38!important;
                 padding-top: 18px;
-                padding-bottom: 9px;
+                padding-bottom: 5px;
             }
         .ini-circle {
             display: flex;
-            height: 56px;
-            width: 56px;
+            height: 76px;
+            width: 76px;
             background-color: #FFF;
-            color: #bd5d38;
+            color: #BD5D38;
             align-items: center;
             justify-content: center;
             margin-left: auto !important;
@@ -76,24 +63,43 @@
             padding: 0px;
         }
         .h-name { 
-            padding-bottom: 16px;
+            padding-bottom: 4px;
             color: #FFF;
+            text-align: center;
         }
         .summary, .experience {
             padding-left: 42px;
-            padding-top: 26px;
-        }
+            padding-top: 0px;
+            padding-right: 25px;
+        } 
+        .bg-primary {
+            background-color: #BD5D38 !important;
+            }
+
+            .text-primary {
+            color: #BD5D38 !important;
+            }
+
+            a {
+            color: #BD5D38;
+            }
+
+            a:hover, a:focus, a:active {
+            color: #824027;
+            }
     </style>
 </head> 
-<body class="container bg-light"> 
-    <div class="card">
-        <div class="bg-white h-con">  
-            <h3 class="ini-circle">O</h3>
-            <h3 class="h-name text-center">Osmer U. Vinarao</h3> 
+<body> 
+    <div class="paper">
+        <div class="h-con">  
+            <div class="ini-circle">
+                <img class="img-fluid" src="img/osmer.jpg" alt="">
+            </div>
+            <h2 class="h-name text-center">Osmer U. Vinarao</h2> 
         </div>
         <div class="summary">
             <h4 class="text-primary">Professional Summary</h4>
-            <p><b>  Hi! I'm Osmer, with 3 years of experience working as a computer programmer. Capable of working with a variety of technology to
+            <p><b>  Hi! I'm Osmer, with 3 years of experience working as a computer programmer. I am capable of working with a variety of technology to
                 gain more experience, knowledge and collaborate with my colleagues to be able to add the strength of the company and myself too.</b>
               
             </p>
@@ -104,18 +110,19 @@
                 I'm current working as a SOFTWARE DEVELOPER at Split Second Software Services Corporation.
             </b></p>
             <ul>
+                <li><strong>Frontend Developer</strong> using Laravel Jetstream (VueJS)<i class="text-primary"> (May, 2020 - Present)</i></li>
+                <li><strong>Full stack Laravel VueJS</strong> <i class="text-primary"> (June, 2019 - May, 2020)</i></li>
                 <li><strong>Mobile App Developer</strong> using <strong>Flutter</strong><i class="text-primary"> (November, 2018 - June, 2019)</i></li>
-                <li><strong>Full stack Laravel Vue</strong> <i class="text-primary"> (June, 2019 - May, 2020)</i></li>
-                <li><strong>Frontend Developer</strong> using Laravel Jetstream (VUE)<i class="text-primary"> (May, 2020 - Present)</i></li>
+                
             </ul>
         </div>
         <div class="experience">
             <h4 class="text-primary">Company Project</h4> 
             <ul>
-                <li><strong>Dr.Implicit</strong> (Frontend) mobile app using <strong>Flutter</strong> (<a href="https://play.google.com/store/apps/details?id=com.splitsecondresearch.implicitdr1"> Available</a>)</li>
-                <li><strong>Impulse IDE</strong> (Frontend) using  <strong>Laravel Vue</strong> <i>(Confidential)</i></li>
-                <li><strong>Cost Tool IDE</strong> (Fullstack) using <strong>Laravel Vue</strong> <i>(Confidential)</i></li>
-                <li><strong>Express IDE</strong> (Frontend) using <strong>Laravel Jetstream (VUE)</strong> <i>(Confidential)</i></li>
+                <li><strong>Dr.Implicit</strong> (Frontend) mobile app using <strong>Flutter</strong> (<a href="https://play.google.com/store/apps/details?id=com.splitsecondresearch.implicitdr1"> Public</a>)</li>
+                <li><strong>Impulse IDE</strong> (Frontend) using  <strong>Laravel VueJS</strong> <i>(Confidential)</i></li>
+                <li><strong>Cost Tool IDE</strong> (Fullstack) using <strong>Laravel VueJS</strong> <i>(Confidential)</i></li>
+                <li><strong>Express IDE</strong> (Frontend) using <strong>Laravel Jetstream (VueJS)</strong> <i>(Confidential)</i></li>
             </ul>
         </div>
         <div class="experience">
@@ -134,17 +141,17 @@
             </ul> 
         </div>
         <div class="experience">
-            <h4 class="text-primary">REFERRAL</h4>  
-            <ul>
-                <li><strong>Isabella Gillian Alvarez</strong></li>
-                <li><strong>Vincent Cupiid Tabiongan</strong></li>
-            </ul> 
-        </div>
-        <div class="experience">
             <h4 class="text-primary">Contacts</h4>  
             <ul>
                 <li><strong>osmervinarao@gmail.com</strong></li>
                 <li><strong>(+63)926-964-9985</strong></li>
+            </ul> 
+        </div> 
+        <div class="experience">
+            <h4 class="text-primary">REFERRAL</h4>  
+            <ul>
+                <li><strong>Isabella Gillian Alvarez</strong></li>
+                <li><strong>Vincent Cupiid Tabiongan</strong></li>
             </ul> 
         </div>
     </div>

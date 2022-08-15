@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="author" content=""> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Osmer U. Vinarao</title>  
     <!-- Custom styles for this template -->
     <!-- <link href="css/resume.min.css" rel="stylesheet"> -->
@@ -14,7 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-    <style>
+    <style> 
         body {
             margin: 0px;
             background-color: #EEE;
@@ -67,7 +67,7 @@
             color: #FFF;
             text-align: center;
         }
-        .summary, .experience {
+        .summary, .experience,.name {
             padding-left: 42px;
             padding-top: 0px;
             padding-right: 25px;
@@ -76,41 +76,88 @@
             background-color: #BD5D38 !important;
             }
 
-            .text-primary {
-            color: #BD5D38 !important;
-            }
+        .text-primary {
+        color: #BD5D38 !important;
+        }
 
-            a {
+        a {
+        color: #BD5D38;
+        }
+
+        a:hover, a:focus, a:active {
+        color: #824027;
+        }
+        @media print {
+        body {
+            background-color: #FFF;
+        } 
+        }
+        .contact{
+            font-family: 'Source Code Pro', monospace;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600; 
+            margin-top: 10px;
+            padding-left: 42px;
+            padding-right: 42px;
+            font-size: 12px;
+            
+        }
+        .name{
+            padding-top: 20px;
+        }
+        .name>.name1{
+            font-size: 45px;
+            font-weight: 600;
             color: #BD5D38;
-            }
-
-            a:hover, a:focus, a:active {
-            color: #824027;
-            }
-            @media print {
-            body {
-                background-color: #FFF;
-            }
+        }
+        .name>.position{
+            padding-top: 5px;
+            font-size: 16px;
+            font-family: 'Source Code Pro', monospace;
+            font-weight: 600;
         }
     </style>
 </head> 
 <body> 
     <div class="paper">
-        <div class="h-con">  
+        <!-- <div class="h-con">  
             <div class="ini-circle">
                 <img class="img-fluid" src="img/osmer.jpg" alt="">
             </div>
-            <h2 class="h-name text-center">Osmer U. Vinarao</h2> 
+            <h2 class="h-name text-center">Osmer U. Vinarao</h2>    
+        </div> -->
+        <div class="name">
+            <div class="name1 text-primary">Osmer Vinarao</div>
+            <div class="position">Full Stack, Software Developer</div>
+        </div>
+        <div class="contact">
+            <div> 
+                <i class="glyphicon glyphicon-envelope"></i>
+                osmervinarao@gmail.com 
+            </div>
+            <div>  
+                <i class="glyphicon glyphicon-earphone"></i>
+                (+63)926-964-9985
+            </div>
+            <div>  
+                <i class="glyphicon glyphicon-home"></i>
+                mervins.github.io/portfolio
+            </div>
+            <div>  
+                <i class="glyphicon glyphicon-tags"></i>
+                github.dev/mervins
+            </div>
         </div>
         <div class="summary">
-            <h4 class="text-primary"><strong>Summary</strong></h4>
-            <p><b>I am capable and flexible in working with a variety of technologies. To gain more experience,
-                 knowledge and collaborate with my colleagues. To be able to add the strength of the company and make a positive impact. </b>
-              
+            <h4 class="text-primary"><strong class="text-primary">Summary</strong></h4>
+            <p><b>I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. </b>
             </p>
-        </div>
+        </div> 
         <div class="experience">
-            <h4 class="text-primary">Experience</h4>
+            <h4 class="text-primary"><strong class="text-primary">Experience</strong></h4>
             <p><b>
                 Split Second Software Services - Software Developer 
             </b></p>
@@ -120,7 +167,7 @@
                 <li><strong>Designed and developed company custom  IDE’s</strong> </li>
                 <li><strong>Some of the projects that we developed:</strong>
                     <ul>
-                        <li><strong>Dr.Implicit (Frontend) mobile app using Flutter   (<a href="https://play.google.com/store/apps/details?id=com.splitsecondresearch.implicitdr1"> Public</a>) </strong></li>
+                        <li><strong>Dr.Implicit (Frontend) mobile app using Flutter</strong></li>
                         <li><strong>Impulse IDE (Frontend) using VueJS (Confidential)</strong></li>
                         <li><strong>Cost Tool IDE (Fullstack) using Laravel VueJS (Confidential)</strong></li>
                         <li><strong>Express IDE (Frontend) using Laravel Jetstream (Inertia) (Confidential)</strong></li>
@@ -130,14 +177,14 @@
             </ul>
         </div> 
         <div class="experience">
-            <h4 class="text-primary">Skills</h4> 
+            <h4 class="text-primary"><strong class="text-primary">Skills</strong></h4> 
             <ul>
                 <li><strong>HTML, CSS, JavaScript, Laravel, Flutter, VueJS, Nodejs, Express, Sequalize and ElectronJS.</strong></li>
                 <li><strong>CSS library (Bootstrap & Tailwind)</strong></li> 
             </ul> 
         </div>
         <div class="experience">
-            <h4 class="text-primary">Education</h4> 
+            <h4 class="text-primary"><strong class="text-primary">Education</strong></h4> 
             <p><strong class="text-primary">Bukidnon State University </strong> <strong>- Malaybalay City, Bukidnon, Philippines</strong></p>
             <p><strong> 2013-2018</strong></p>
             <ul>
@@ -146,12 +193,18 @@
             </ul> 
         </div> 
         <div class="experience">
+            <h4 class="text-primary"><strong class="text-primary">Interest</strong></h4> 
+            <ul>
+                <li><strong>Bike Enduro, Basketball, Traveling, Mobile and Desktop games, Hiking</strong></li> 
+            </ul> 
+        </div>
+        <!-- <div class="experience">
             <h4 class="text-primary">Contacts</h4>  
             <ul>
                 <li><strong>osmervinarao@gmail.com</strong></li>
                 <li><strong>(+63)926-964-9985</strong></li>
             </ul> 
-        </div> 
+        </div>  -->
         
     </div>
 
